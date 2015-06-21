@@ -1,0 +1,114 @@
+/*
+ * Base structure
+ */
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+a ,ul, li, nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+nav { display: block; }
+ul { list-style: none; }
+
+/* nav menu styles */
+.nav-sidebar { 
+  display: block; 
+  margin-top: 20px;
+  -webkit-box-shadow: 3px 2px 3px rgba(0,0,0,0.7);
+  -moz-box-shadow: 3px 2px 3px rgba(0,0,0,0.7);
+  box-shadow: 3px 2px 3px rgba(0,0,0,0.7);
+}
+
+.nav-sidebar li { }
+
+.nav-sidebar > li > a { 
+  display: block; 
+  padding: 16px 18px;
+  font-size: 1.3em;
+  text-align: center;
+  color: #d4d4d4;
+  text-decoration: none;
+  border-bottom: 1px solid #212121;
+  background-color: #343434;
+  background: -webkit-gradient(linear, left top, left bottom, from(#343434), to(#292929));
+  background: -webkit-linear-gradient(top, #343434, #292929);
+  background: -moz-linear-gradient(top, #343434, #292929);
+  background: -ms-linear-gradient(top, #343434, #292929);
+  background: -o-linear-gradient(top, #343434, #292929);
+  background: linear-gradient(top, #343434, #292929);
+}
+.nav-sidebar > li > a:hover, .nav-sidebar > li > a.open { 
+  color: #e9e9e9;
+  border-bottom-color: #384f76;
+  background-color: #6985b5;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6985b5), to(#456397));
+  background: -webkit-linear-gradient(top, #6985b5, #456397);
+  background: -moz-linear-gradient(top, #6985b5, #456397);
+  background: -ms-linear-gradient(top, #6985b5, #456397);
+  background: -o-linear-gradient(top, #6985b5, #456397);
+  background: linear-gradient(top, #6985b5, #456397);
+}
+
+.nav-sidebar li ul { display: none; background: #4a5b78; }
+
+.nav-sidebar li ul li a { 
+  display: block; 
+  background: none;
+  padding: 10px 0px;
+  font-size: 1.1em;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: #e3e7f1;
+  text-shadow: 1px 1px 0px #000;
+}
+.nav-sidebar li ul li a:hover {
+  background: #394963;
+}
+
+/*
+ * Main content
+ */
+
+
+@media (min-width: 768px) {
+  .main {
+    padding: 20px;
+    margin-left: 0;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 0px;
+    margin:20px 0px;
+  }
+  .device {
+    margin:5px;
+    display: block;
+  }
+  .device_id {
+    display: block;
+  }
+  .date {
+    margin: 5px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
