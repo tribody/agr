@@ -240,7 +240,7 @@ CREATE TABLE IF NOT EXISTS `user_message` (
   `area` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '实验区',
   `zone` int(11) NOT NULL COMMENT '区号',
   `user` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT '用户名',
-  `password` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT '密码',
+  `password` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT '密码',
   `role` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT '用户角色',
   `checked` int(11) NOT NULL DEFAULT '0' COMMENT '是否经过验证',
   PRIMARY KEY (`id`),
@@ -252,7 +252,7 @@ CREATE TABLE IF NOT EXISTS `user_message` (
 --
 
 INSERT INTO `user_message` (`country`, `district`, `area`, `zone`,`user`, `password`, `role`,`checked` ) VALUES
-('中国', '上海', '孙桥', '1', 'admin','admin','超级管理员', 1);
+('中国', '上海', '孙桥', '1', 'admin','21232f297a57a5a743894a0e4a801fc3','超级管理员', 1);
 
 
 
